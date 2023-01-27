@@ -1,9 +1,9 @@
-import Drawer from "@mui/material/Drawer";
-import DrawerHeader from "./drawerHeader";
-import { drawerWidth } from ".";
-import { IconButton } from "@mui/material";
-import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
-import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import Drawer from '@mui/material/Drawer';
+import DrawerHeader from './drawerHeader';
+import { drawerWidth } from '.';
+import { IconButton } from '@mui/material';
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 interface Props {
   open: boolean;
   setOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -12,12 +12,12 @@ const SideBar = ({ open, setOpen }: Props) => {
   return (
     <Drawer
       sx={{
-        width: open ? drawerWidth : "88px",
+        width: open ? drawerWidth : '88px',
         flexShrink: 0,
-        "& .MuiDrawer-paper": {
-          width: open ? drawerWidth : "88px",
-          boxSizing: "border-box",
-          borderRight: "1px dashed rgba(145, 158, 171, 0.24)",
+        '& .MuiDrawer-paper': {
+          width: open ? drawerWidth : '88px',
+          boxSizing: 'border-box',
+          borderRight: '1px dashed rgba(145, 158, 171, 0.24)',
         },
       }}
       variant="permanent"
@@ -27,18 +27,18 @@ const SideBar = ({ open, setOpen }: Props) => {
       <IconButton
         onClick={() => setOpen((open) => !open)}
         sx={{
-          position: "fixed",
-          left:open ? "272px" : "80px",
-          top: "32px",
-          width: "16px",
-          height: "16px",
-          p: "4px",
-          borderRadius: "50%",
-          border: "1px dashed rgba(145, 158, 171, 0.24)",
-          fontSize: "18px",
-          "& svg": {
-            width: "16px",
-            height: "16px",
+          position: 'fixed',
+          left:open ? '272px' : '80px',
+          top: '32px',
+          width: '16px',
+          height: '16px',
+          p: '4px',
+          borderRadius: '50%',
+          border: '1px dashed rgba(145, 158, 171, 0.24)',
+          fontSize: '18px',
+          '& svg': {
+            width: '16px',
+            height: '16px',
           },
         }}
       >

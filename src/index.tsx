@@ -1,11 +1,11 @@
-import * as React from "react";
-import ReactDOM from "react-dom/client";
-import { StyledEngineProvider, ThemeProvider } from "@mui/material/styles";
-import App from "./App";
-import { QueryClient, QueryClientProvider } from "react-query";
-import { Auth0ProviderWithNavigate } from "./auth0-provider-with-navigate";
-import { BrowserRouter } from "react-router-dom";
-import theme from "./config/theme";
+import * as React from 'react';
+import ReactDOM from 'react-dom/client';
+import { StyledEngineProvider, ThemeProvider } from '@mui/material/styles';
+import App from './App';
+import { QueryClient, QueryClientProvider } from 'react-query';
+import { Auth0ProviderWithNavigate } from './auth0-provider-with-navigate';
+import { BrowserRouter } from 'react-router-dom';
+import theme from './config/theme';
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
@@ -18,7 +18,7 @@ const queryClient = new QueryClient({
   },
 });
 const root = ReactDOM.createRoot(
-  document.getElementById("root") as HTMLElement
+  document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
